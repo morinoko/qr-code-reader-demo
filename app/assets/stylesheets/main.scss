@@ -1,0 +1,49 @@
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+*, ::after, ::before {
+    @include box_sizing;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  padding: 2em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  color: #EEE;
+  background-color: #616161;
+  padding: 2em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: green;
+  padding: .5em;
+  border-radius: 5px;
+}
