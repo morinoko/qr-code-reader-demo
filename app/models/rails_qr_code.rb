@@ -1,0 +1,2 @@
+class RailsQrCode < ApplicationRecord
+end
