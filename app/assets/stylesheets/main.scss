@@ -32,11 +32,15 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
 
-footer a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: #b2ebf2;
+    }
+  }
 }
 
 .button {
