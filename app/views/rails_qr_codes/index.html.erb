@@ -1,7 +1,8 @@
 <h1>Recent QR Code Scans</h1>
 
-<%= link_to 'New Scan', new_rails_qr_code_path %>
+<%= link_to 'New Scan', new_rails_qr_code_path, class: 'button' %>
 
+<p><strong>20 most recent scans:</strong></p>
 <ul>
   <% @qr_codes.each.with_index(1) do |qr_code, index| %>
     <li><%= "Scan #{index}: " %><%= link_to qr_code.content, rails_qr_code_path(qr_code) %></li>
