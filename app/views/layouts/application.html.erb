@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section id="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+
+    <footer>
+      <span><%= link_to 'Home', root_path %> | </span>
+      <span><%= link_to 'Basic QR Scanner', basic_qr_code_reader_path %> | </span>
+      <span><%= link_to 'QR Scanner on Rails', rails_qr_codes_path %></span>
+    </footer>
   </body>
 </html>
