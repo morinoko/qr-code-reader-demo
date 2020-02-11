@@ -1,6 +1,10 @@
 class RailsQrCodesController < ApplicationController
   before_action :set_qr_data, only: :create
 
+  def index
+    @qr_codes = RailsQrCode.order(created_at: :desc).first(20)
+  end
+
   def new
   end
 
