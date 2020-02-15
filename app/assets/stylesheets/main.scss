@@ -25,17 +25,16 @@ li {
   list-style: none;
 }
 
-footer {
+header {
   color: #EEE;
   background-color: #616161;
-  padding: 2em;
-  position: absolute;
-  bottom: 0;
+  padding: 1.5em;
   width: 100%;
 
   a {
     color: inherit;
     text-decoration: none;
+    margin-right: 1em;
 
     &:hover {
       color: #b2ebf2;
@@ -50,4 +49,18 @@ footer {
   background: green;
   padding: .5em;
   border-radius: 5px;
+}
+
+.result {
+  margin: 2em 0;
+
+  &__label {
+    font-size: 1.5em;
+  }
+
+  &__code {
+    display: inline-block;
+    font-size: 1.3em;
+    color: deeppink;
+  }
 }
