@@ -4,7 +4,11 @@
 
 <p><strong>20 most recent scans:</strong></p>
 <ul class="scan-list">
-  <% @qr_codes.each.with_index(1) do |qr_code, index| %>
-    <li class="scan-list__item"><%= "Scan #{index}: " %><%= link_to qr_code.content, rails_qr_code_path(qr_code) %></li>
+  <% if @qr_codes.present? %>
+    <% @qr_codes.each.with_index(1) do |qr_code, index| %>
+      <li class="scan-list__item"><%= "Scan #{index}: " %><%= link_to qr_code.content, rails_qr_code_path(qr_code) %></li>
+    <% end %>
+  <% else %>
+    <p>There are no scans yet!</p>
   <% end %>
 </ul>
