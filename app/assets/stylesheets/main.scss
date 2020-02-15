@@ -13,18 +13,6 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-.container {
-  padding: 2em;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 header {
   color: #EEE;
   background-color: #616161;
@@ -42,6 +30,10 @@ header {
   }
 }
 
+.container {
+  padding: 2em;
+}
+
 .button {
   display: inline-block;
   text-decoration: none;
@@ -49,6 +41,15 @@ header {
   background: green;
   padding: .5em;
   border-radius: 5px;
+}
+
+.scan-list {
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    line-height: 1.5em;
+  }
 }
 
 .result {
