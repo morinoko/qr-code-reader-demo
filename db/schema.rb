@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2020_02_11_032022) do
 
-  create_table "rails_qr_codes", force: :cascade do |t|
-    t.string "content"
+  create_table "qr_codes", force: :cascade do |t|
+    t.string "data"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'home#index'
   
   get 'basic-qr-code-reader', to: 'basic_qr_codes#index'
-  resources :rails_qr_codes, only: [:index, :new, :create, :show]
+  
+  resources :qr_codes, only: [:index, :new, :create, :show]
 end
