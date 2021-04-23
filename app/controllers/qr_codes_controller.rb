@@ -9,7 +9,7 @@ class QrCodesController < ApplicationController
   end
 
   def create
-    qr_code = QrCode.create(content: @qr_data)
+    qr_code = QrCode.create(data: @qr_data)
 
     redirect_to qr_code_path(qr_code)
   end
